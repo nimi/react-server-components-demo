@@ -8,3 +8,10 @@
     port = 8888
     targetPort = 8080
     framework = "#custom"
+    
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  # optional, deploy the lighthouse report to a path under your site
+  [plugins.inputs]
+    output_path = "reports/lighthouse.html"
